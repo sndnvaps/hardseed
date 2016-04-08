@@ -1,14 +1,15 @@
 <h1 align="center">给不了你梦中情人，至少还有硬盘女神：hardseed</h1>
 yangyangwithgnu@yeah.net  
 http://yangyangwithgnu.github.io/  
-2016-01-17 12:59:57
+2016-02-04 14:53:51
 
 
 ##谢谢
 
-**捐赠：支付宝 yangyangwithgnu@yeah.net 。支付宝链接 https://shenghuo.alipay.com/send/payment/fill.htm?optEmail=yangyangwithgnu@yeah.net ，支付宝二维码 $_$**
+**捐赠：支付宝 yangyangwithgnu@yeah.net ，支付宝二维码（左），微信二维码（右）**
 <div align="center">
-<img src="https://raw.githubusercontent.com/yangyangwithgnu/yangyangwithgnu.github.io/master/pics/donate_qr.png" alt=""/><br>
+<img src="https://raw.githubusercontent.com/yangyangwithgnu/yangyangwithgnu.github.io/master/pics/alipay_donate_qr.png" alt=""/>
+<img src="https://raw.githubusercontent.com/yangyangwithgnu/yangyangwithgnu.github.io/master/pics/wechat_donate_qr.png" alt=""/><br>
 </div>
 
 **二手书**：书，我提高开发技能的重要手段之一，随着职业生涯的发展，书籍也在不断增多，对我而言，一本书最多读三遍，再往后，几乎没有什么营养吸收，这部分书对我已基本无用，但对其他人可能仍有价值，所以，为合理利用资源，我决定低价出售这些书，希望达到两个目的：0）用售出的钱购买更多新书（没当过雷锋的朋友 (๑´ڡ`๑)）；1）你低价购得需要的书（虽然二手）。到 https://github.com/yangyangwithgnu/used_books 看看有无你钟意的。
@@ -23,13 +24,14 @@ http://yangyangwithgnu.github.io/
 
 **注意**  
 + 代理是一切的先决条件。你可以使用自己的代理工具，用 hardseed 的命令行选项 --proxy 指定本地中转地址及端口，也可以用我为你预配置的 goagent 代理工具，位于 https://github.com/yangyangwithgnu/goagent_out_of_box_yang
-+ windows 用户需赋予 hardseed\bin\windows\hardseed.exe 管理员运行权限。具体请右键，选中 properties - compatibility - privilege level - run this program as an admin
 
 
 ##版本
 ----------------
 
-**[v0.2.13，修正，2016-01-17]**：0）修正 caoliu 翻译的错误。  
+**[v0.2.14-1，修正，2016-02-04]**：0）行了、行了，我抱歉，不知道有这么多 win 用户需要 hardseed，之前是我狭隘了，只考虑到 unix-like 用户。编译好的 win 版本程序送你，位于 bin\build_4_win.7z；1）另外，osX 下的构建方面进行了细化。新年快乐！  
+**[v0.2.14，修正，2016-01-31]**：0）忽略解析 aicheng 站务相关帖子。  
+**[v0.2.13，修正，2016-01-17]**：0）修正 caoliu 翻页的错误。  
 **[v0.2.12，优化，2015-05-26]**：0）先前 hardseed 中硬编码 aicheng 和 caoliu 论坛入口地址，地址一旦变更，每次需要重新调整代码，很是麻烦，现在我在本项目主页中放了一份配置文件 config/portals_list.json，hardseed 自动从该文件中获取最新论坛入口地址（安啦，我会及时更新的）；1）调整部分公共库代码。  
 **[v0.2.11，修正，2015-03-22]**：修正 aicheng 种子和图片解析错误的问题（别发邮件了哈，亲，邮箱都他妈快撑爆了） 。  
 **[v0.2.10，修正，2014-12-07]**：caoliu 地址变更，shit :-P  
@@ -141,7 +143,7 @@ That's all. Any suggestions let me know by yangyangwithgnu@yeah.net or http://ya
 ##中文
 --------
 
-硬盘女神，你懂嘀！hardseed 是个种子下载工具，它从浓（ai）情（cheng）蜜（she）意（qu）和爱（cao）意（liu）无（she）限（qu）的地方获取女神种子、图片。  
+hardseed 希望带给你（硬盘）女神！女神的种子和图片。  
 
 ###【翻墙】  
 你知道，这一切的一切都在墙外，所以你得具备翻墙环境，hardseed 才能帮你拉女神。hardseed 支持 goagent、shadowsocks、SSH、VPN （PPTP 和 openVPN）等各类代理模式，甚至你可以同时使用多种代理以极速下载。从普及度、稳定性、高效性来看，goagent 最优。“我一小白，平时工作压力本来就大，就想看看女神轻松下，你还让我折腾代理！没人性！”，嘚，亲，咱是做服务的。我帮你配置了一份开箱即用的 goagent，位于 https://github.com/yangyangwithgnu/goagent_out_of_box_yang ，下载后，linux 用户，命令行中运行
@@ -163,7 +165,7 @@ $ git clone https://github.com/yangyangwithgnu/hardseed.git
 ###【源码安装】
 
 ####『windows』  
-这基本没 windows 用户什么事儿，除非你有 cygwin，否则你没法编译源码，没事，帮你弄好了，我的定位是牙医界的服务人员，服务很重要，二进制执行程序位于 hardseed\bin\windows\hardseed.exe。
+这基本没 windows 用户什么事儿，除非你有 cygwin，否则你没法编译源码，没事，帮你弄好了，我的定位是牙医界的服务人员，服务很重要，二进制执行程序位于 hardseed\bin\build_4_win.7z。
  
 ####『linux』
 0）唯一依赖 libcurl，请自行安装；  
@@ -172,11 +174,11 @@ $ git clone https://github.com/yangyangwithgnu/hardseed.git
 ```
 $ cd hardseed/build/
 $ cmake .
-$ make && sudo make install
+$ make && make install
 ```
  
 ####『osX』
-先将 build/CMakeLists.txt 中的  
+首先，将 build/CMakeLists.txt 中的  
 ```
 TARGET_LINK_LIBRARIES(hardseed curl pthread)
 ```
@@ -184,7 +186,34 @@ TARGET_LINK_LIBRARIES(hardseed curl pthread)
 ```
 TARGET_LINK_LIBRARIES(hardseed curl pthread iconv)
 ```
-其他同 linux 构建方法。
+
+然后，将 build/CMakeLists.txt 中
+```
+## osX
+##>>>>>>>>>>>>>>>>>>>>>>
+
+#SET(CMAKE_CXX_COMPILER "g++")
+#SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
+#SET(CMAKE_BUILD_TYPE release)
+#ADD_EXECUTABLE(hardseed ${SRC_LIST})
+#TARGET_LINK_LIBRARIES(hardseed curl pthread iconv)
+#INSTALL(PROGRAMS hardseed DESTINATION /usr/bin/)
+```
+第一列的 # 删除；
+
+接着，将 build/CMakeLists.txt 中
+```
+# release
+SET(CMAKE_CXX_COMPILER "g++")
+SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
+SET(CMAKE_BUILD_TYPE release)
+ADD_EXECUTABLE(hardseed ${SRC_LIST})
+TARGET_LINK_LIBRARIES(hardseed curl pthread)
+INSTALL(PROGRAMS hardseed DESTINATION /usr/bin/)
+```
+删掉；
+
+最后，剩下步骤同 linux 构建方法。
 
 
 
@@ -192,7 +221,7 @@ TARGET_LINK_LIBRARIES(hardseed curl pthread iconv)
 **亲，听好了，运行 hardseed 前务必确保代理程序已正常运行，否则，别说女神，蚊子都碰不到。**
 
 ####『windows』  
-先进入 hardseed\bin\windows\，找到并选中 hardseed.exe，右键设置**以管理员权限运行该程序**，接着键入 alt-d 将光标定位到文件管理器的地址栏中，键入 CMD 启动命令行窗口，再在 CMD 中键入
+先进入 hardseed\bin\，解压 build_4_win.7z，选中 hardseed.exe，右键设置**以管理员权限运行该程序**，接着键入 alt-d 将光标定位到文件管理器的地址栏中，键入 CMD 启动命令行窗口，在 CMD 中键入
 ```
 X:\hardseed\bin\windows> hardseed.exe
 ```
@@ -211,7 +240,7 @@ $ hardseed --saveas-path ~/downloads --topics-range 256 --av-class aicheng_west
 
 ###【FQA】  
 
-**Q1**：为何 windows 版的可执行文件目录 hardseed\bin\windows\ 下有一堆 cyg\*.dll 文件？  
+**Q1**：为何 windows 版的可执行文件目录 build_4_win\ 下有一堆 cyg\*.dll 文件？  
 **A1**：hardseed 是用 C++ 编写的遵循 SUS（单一 unix 规范）的原生 linux 程序，理论上，在任何 unix-like（linux、BSD、osX） 系统上均可正常源码编译，唯独不支持 windows，为让 hardseed 具备跨平台能力，须借由某种工具（或环境）将 hardseed 转换成 windows 下的执行程序。cygwin 就是这种环境，我把 hardseed 源码纳入 cygwin 环境中重新编译，即可生成 windows 下的可执行程序 hardseed.exe，在这个过程中，cygwin 会加入些自己的代码和中转库到 hardseed.exe 中，cyg\*.dll 就是各类中转库。
 
 **Q2**：为何运行 windows 版的执行程序总有如下警告
